@@ -1,0 +1,81 @@
+<%- include("header") -%>
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+  <div class="wrapper wrapper--w1140">
+    <div class="card card-3">
+      <div class="card-heading">
+        <img src="images/naya2.png" alt="image">
+       </div>
+      <div class="card-body">
+        <h2 class="title">Sign Up</h2>
+        <form action="/"method="POST">
+          <div class="input-group">
+            <input class="input input--style-3" type="email" name="email" placeholder="Enter email"required>
+          </div>
+          <div class="input-group">
+            <input class="input input--style-3" type="password" name="password" placeholder="Password"required>
+          </div>
+          <div class="input-group">
+            <input class="input input--style-3" type="password" name="conf_password" placeholder="Re-type Password"required>
+          </div>
+          <div class="input-group category">
+            <input type="checkbox" name="type" value="designer"><label class="input--style-3 spaced">Design</label>
+            <input type="checkbox" name="type" value="maker"><label class="input--style-3 spaced ">Maker</label>
+          </div>
+          <div class="designer">
+            <div class="input-group ">
+              <input class="input input--style-3" type="text" name="numberofHours" placeholder="Hours spent per week">
+            </div>
+            <div class="input-group category">
+              <div class="">
+                <label class="input--style-3 floated">Type of designer :</label>
+                <div class="select">
+                  <select name="typeOfDesigner">
+                    <option disabled="disabled" selected="selected">Choose your category</option>
+                    <option>Furniture Designer</option>
+                    <option>Architect</option>
+                    <option>Interior Designer</option>
+                    <option>Industrial Designer</option>
+                    <option>Designer Maker</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="select-dropdown"></div>
+              </div>
+            </div>
+            <div class="input-group">
+              <input class="input input--style-3" type="text" name="training" placeholder="Education level">
+            </div>
+          </div>
+          <div class="maker">
+            <div class="input-group">
+              <input class="input input--style-3" type="text" name="numberofProjects" placeholder="Projects per month">
+            </div>
+            <div class="input-group category">
+              <div class="">
+                <label class="input--style-3 floated">Materials to work:</label>
+                <select name="material">
+                  <option disabled="disabled" selected="selected">Choose from options</option>
+                  <option>Wood</option>
+                  <option>Metal</option>
+                  <option>Glass</option>
+                  <option>Plastic</option>
+                  <option>Concrete</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group">
+              <input class="input input--style-3" type="text" name="location" placeholder="Location">
+            </div>
+          </div>
+          <div class="p-t-10">
+            <button class="btn btn--pill btn--green" type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%-include("footer")-%>

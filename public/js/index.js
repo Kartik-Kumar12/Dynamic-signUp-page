@@ -1,0 +1,11 @@
+$(".designer").hide();
+$(".maker").hide();
+$('input[type="checkbox"]').change(function(){
+   if($(this).prop("checked")==true)
+   {
+        $("."+this.value).show();
+   }
+   else{
+     $("."+this.value).hide();
+   }
+});
